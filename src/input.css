@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-item {
+  @apply flex justify-between border items-center border-black rounded-md p-2 pr-3 hover:bg-customBackgroundColor transition-colors gap-10 cursor-pointer;
+}
+
+.completed-task-item {
+  @apply bg-customBackgroundColor 
+}
+
+.completed-task-item p {
+  @apply line-through
+}
+
+li button {
+  @apply invisible 
+}
+
+.completed-task-item .delete-button {
+  @apply visible 	
+}
